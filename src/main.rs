@@ -1,4 +1,4 @@
-const BUILDER: &str = "tls-probe-553e2b";
+const BUILDER: &str = "tls-probe-427d55";
 #[derive(Debug, Default)]
 struct Config { host: String, port: u16, debug: bool, tags: Vec<String> }
 struct ConfigBuilder { inner: Config }
